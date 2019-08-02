@@ -1,0 +1,25 @@
+@import "./../../../assets/variable.scss";
+
+.contain {
+    padding-left: 5em;
+    padding-right: 5em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    :global .card {
+        width: 30%;
+        box-shadow: 0px 1px 20px 0.2rem #f1f1f1;
+        border: none;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
